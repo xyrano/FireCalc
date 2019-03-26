@@ -1,2 +1,2 @@
 # FireCalc
-Auswertungsprogramm 
+Auswertungsprogramm!
