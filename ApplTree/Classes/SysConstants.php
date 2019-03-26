@@ -75,19 +75,19 @@ final class SysConstants
     /**
      * Database Name
      */
-    const sysDatabaseName = "ffab";
+    const sysDatabaseName = "";
     
-    //const sysDatabaseName = "ffabDemo";
+    //const sysDatabaseName = "xxxDemo";
     
     /**
      * Database Username
      */
-    const sysDatabaseUser = "mustermann";
+    const sysDatabaseUser = "";
     
     /**
      * Database password
      */
-    const sysDatabasePwd = "start123";
+    const sysDatabasePwd = "";
     
     /**
      * Define Field 'ModifiedDateTime' stores to every modification the DateTime -<br>

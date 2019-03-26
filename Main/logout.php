@@ -8,6 +8,6 @@ if(!isset($_SESSION))
 $login = new LoginLogout();
 if($login->logout())
 {
-    header('Location: http://localhost/ffab/');
+    header('Location: http://localhost/FireCalc/');
 }
     

@@ -47,7 +47,7 @@ $(document).ready(function() {
         
         // TODO: perhaps a dynamics recursive propertie is better?
         //var savePage = "../../saveWindowProperties.php"; // localhost        
-        var savePage = "/ffab/saveWindowProperties.php"; // absolute Path like in MenuItems
+        var savePage = "/FireCalc/saveWindowProperties.php"; // absolute Path like in MenuItems
        
         $.ajax(
         {

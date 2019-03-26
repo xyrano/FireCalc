@@ -40,7 +40,7 @@ require_once("../../ApplTree/Classes/FireDeptTable.php");
 
 
 $fileType = @$_POST['fileType'];
-$fileName = "ffabMemberTable-".uniqid()."-".DateTimeUtil::currentDateTime(DateTimeUtil::dateTimePattern).".".$fileType;
+$fileName = "FireCalcMemberTable-".uniqid()."-".DateTimeUtil::currentDateTime(DateTimeUtil::dateTimePattern).".".$fileType;
 
 // Create new PHPExcel object
 $objPHPExcel = new PHPExcel();

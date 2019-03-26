@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var location = window.location.hostname + "/ffab/Main";
+    var location = window.location.hostname + "/FireCalc/Main";
     var idx         = $('div#idx').text();  // gloabal functionality for reports or forms 
     
     var windowHeight = 450;
@@ -56,7 +56,7 @@ $(document).ready(function() {
         if(pathTo && windowTitle)
         {                      
             // absolute path
-            $.getJSON("/ffab/getWindowProperties.php?windowTitle=" + windowTitle, function(data) 
+            $.getJSON("/FireCalc/getWindowProperties.php?windowTitle=" + windowTitle, function(data) 
             {
                 $.each(data, function(i, item)
                 {                  
@@ -187,7 +187,7 @@ $(document).ready(function() {
         else
         {
             $.ajax({
-                url: "http://localhost/ffab/FormOptionsDialog.php?TableId="+tableId+"&RecId="+recId,
+                url: "http://localhost/FireCalc/FormOptionsDialog.php?TableId="+tableId+"&RecId="+recId,
                 success: function(formOptionsDialogContent, status, xhr) {
                     new Info("<div style='overflow-y: scroll; overflow-x: hidden; height: 200px;'>" + formOptionsDialogContent + "</div>", { title: "Eigenschaften", buttons: [ { id:0, label: "Schlie&szlig;en", val: 'x' } ] });
                 }
