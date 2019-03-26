@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>   
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>FFAB - Feuerwehr Auswertungsprogramm</title>
+    <link rel="stylesheet" href="design.css">   
+    <script src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            
+            $(".toggleInstall").click(function(e) {
+                e.preventDefault();
+                $("fieldset").toggle();
+            });
+        });
+    </script>
+</head>
+    <body>
+        
+        <div class="loginBox">
+            <div class="loginContent">                
+                <form action="Main/index.php" method="post">
+                    <div class="loginRow"><div class="labelLogin">Name:</div> <input style="width:70px;" type="text" name="lgnName" value=""></div>
+                    <div class="loginRow"><div class="labelLogin">Password:</div> <input style="width:70px;" type="password" name="lgnPwd" value=""></div>
+                    <input style="width:152px;" type="submit" name="lgnSubmit" value="Anmelden">
+                </form>
+            </div>
+        </div>
+        
+        
+        <br><br>
+        <input type="button" name="showInstall" value="Installation" class="toggleInstall">
+        <fieldset style="display:none;">
+            <legend>Grob Installation</legend>
+            Info zu PHP: <a href="./phpInfo.php" target="_blank">PHP Version</a>
+            <ul>
+                <li>Xampp Runterladen und installieren <a href="https://www.apachefriends.org/de/download.html" target="_blank">Xampp Download</a></li>
+                <li>PHP und MySQL Starten (ggf. vorher SQL DB Konfigurieren)</li>
+                <li>SysConstants.php in Application Verzeichnis/ApplTree/Classes/SysConstants.php ändern (Datenbank name & pwd)</li>
+                <li>Applicaton Verzeichnis in htdocs der Xampp Installation ablegen</li>
+                <li>Im Browser URL aufrufen http://localhost/ffab/</li>                
+            </ul>
+        </fieldset>
+        
+    </body>
+</html> 
+

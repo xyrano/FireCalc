@@ -1,0 +1,188 @@
+body 
+{
+    background-color: #fff;
+}
+
+.labelLogin
+{
+    width: 70px;
+}
+.loginRow {
+    display: inline-block;    
+}
+.loginContent {
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;     
+}
+
+.loginBox
+{
+    background-color: aliceblue;
+    border: 1px solid #000000;
+    position: absolute;
+    width: 200px;
+    height: 150px;  
+    top: 50%;
+    left: 50%;
+    margin-top: -75px;
+    margin-left: -100px;
+}
+
+.Overview {
+    /*border: 1px solid #000000;*/
+    float: left;
+    width: 80%;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+
+.ButtonGroup {
+    /*border: 1px solid #000000;*/
+    float:left;
+    width:150px;    
+    padding: 10px;
+    padding-top: 18px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.button {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    width: 90px;
+}
+
+/* by clickin a row insert css and highlithed it with color - see more in menuItems */
+fieldset > table > tbody > .selected 
+{    
+    background-color: #eaaf51;
+}
+
+/* Border of every td in thead */
+fieldset > table > thead > tr > th 
+{
+    border: 0.01em solid #ccc;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+/* Border of every td in tbody */
+fieldset > table > tbody > tr > td 
+{
+    border: 0.01em solid #ccc;
+    padding: 15px; 
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+
+/* Jede zweite zeile Farbig darstellen mit Pseudoklasse  */
+fieldset > table > tbody > tr:nth-child(odd) 
+{
+    background-color: #eaf5ff;
+}
+
+/* Mousover table rows */
+fieldset > table > tbody > tr:hover 
+{ 
+    background-color: threedface; 
+} 
+
+
+/* Table format */
+fieldset > table
+{
+    margin: 0;
+    border-spacing: 0;
+}
+
+/* Tablehead format */
+fieldset > table > thead tr th:first-child
+{
+    border-left: 1px solid #000000;
+}
+fieldset > table > thead tr th:last-child
+{
+    border-right: 1px solid #000000;
+}
+fieldset > table > thead tr:first-child th
+{
+    border-top: 1px solid #000000;
+}
+fieldset > table > thead tr:last-child th
+{
+    border-bottom: 1px solid #000000;
+}
+
+/* Tablebody format */
+fieldset > table > tbody tr td:first-child
+{
+    border-left: inset;
+}
+fieldset > table > tbody tr td:last-child
+{
+    border-right: inset;
+}
+fieldset > table > tbody tr:first-child td
+{
+    border-top: inset;
+}
+fieldset > table > tbody tr:last-child td
+{
+    border-bottom: inset;
+}
+
+/* Color of highlighted error values */
+.highlightErrorVal { background-color: #eaaf51; }
+
+
+.mandatoryField {
+    border-bottom: 1px dashed red;
+    -webkit-box-shadow: 0 1px 0 0 red;
+    -moz-box-shadow: 0 1px 0 0 red;
+    box-shadow: 0 1px 0 0 red;
+}
+
+
+/*+++++++++++++ for loading element ++++++++++++++++++*/
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+/*
+.progressAniDiv {
+*/
+    /*display:    none;*/
+    /*
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('./FhHRx.gif') 
+                50% 50% 
+                no-repeat;
+}
+*/
+
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+/*
+body.loading .progressAniDiv {
+    overflow: hidden;  
+}
+*/
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+/*
+body.loading .progressAniDiv {
+    display: block;
+}
+*/
