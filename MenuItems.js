@@ -1,5 +1,6 @@
 $(document).ready(function() {
-    var location = window.location.hostname + "/FireCalc/Main";
+    var location = window.location.hostname + "/FireTool/Main";  
+    var projectName = "FireTool";
     var idx         = $('div#idx').text();  // gloabal functionality for reports or forms 
     
     var windowHeight = 450;
@@ -46,7 +47,10 @@ $(document).ready(function() {
     
     
     
-    
+    function getBaseUrl() {
+        var baseUri = window.location.hostname;
+        return baseUri + "/" + projectName;
+    }
     
    
     
@@ -54,9 +58,13 @@ $(document).ready(function() {
         
     function openWindow(pathTo, windowTitle) {        
         if(pathTo && windowTitle)
-        {                      
-            // absolute path
-            $.getJSON("/FireCalc/getWindowProperties.php?windowTitle=" + windowTitle, function(data) 
+        {                 
+            // absolute path            
+            $.getJSON("/FireTool/getWindowProperties.php?windowTitle=" + windowTitle, function(data) 
+            //var absoluteURL = window.location.protocol + "//" + window.location.host  + window.location.pathname;
+            //var realtiveURL = window.location.pathname;
+            //var uri = getBaseUrl() + "/getWindowProperties.php?windowTitle=" + windowTitle;
+            //$.getJSON(uri, function(data) 
             {
                 $.each(data, function(i, item)
                 {                  
@@ -187,7 +195,7 @@ $(document).ready(function() {
         else
         {
             $.ajax({
-                url: "http://localhost/FireCalc/FormOptionsDialog.php?TableId="+tableId+"&RecId="+recId,
+                url: "http://localhost/FireTool/FormOptionsDialog.php?TableId="+tableId+"&RecId="+recId,
                 success: function(formOptionsDialogContent, status, xhr) {
                     new Info("<div style='overflow-y: scroll; overflow-x: hidden; height: 200px;'>" + formOptionsDialogContent + "</div>", { title: "Eigenschaften", buttons: [ { id:0, label: "Schlie&szlig;en", val: 'x' } ] });
                 }

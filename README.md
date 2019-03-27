@@ -1,4 +1,15 @@
 # FireCalc
 Auswertungsprogramm!
-In der Datei ApplTree/Classes/SysConstants.php Zeile 78, 85 und 90 anpassen
-Ggf. auch Zeile 63 und 68
+Anpassungen vornhemen in:
+    Datei ApplTree/Classes/SysConstants.php Konstanten
+        1. sysAbsoluteProjectPath
+        2. sysAdminName             [optional]
+        3. sysAdminPwd              [optional]
+        4. sysDatabaseHost
+        5. sysDatabaseName
+        6. sysDatabaseUser
+        7. sysDatabasePwd
+
+
+Zudem in MenutItems.js Zeile 63 und 198 mit dem Projektnamen ergänzen
+ebenso in windowProperties.js in Zeile 50

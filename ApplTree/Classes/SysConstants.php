@@ -56,6 +56,10 @@ final class SysConstants
      */
     const sysSessionFireDeptId = "FIREDEPTID";          // Benutzer mit zuordnung zu einer Feuerwehr die er betreuen darf  (Benutzer)
     
+    /**
+     * Define the absolute Project Path
+     */
+    const sysAbsoluteProjectPath = "http://localhost/FireTool/";
     
     /**
      * Define name for an admin for first time of System use
@@ -75,19 +79,19 @@ final class SysConstants
     /**
      * Database Name
      */
-    const sysDatabaseName = "";
+    const sysDatabaseName = "number8";
     
     //const sysDatabaseName = "xxxDemo";
     
     /**
      * Database Username
      */
-    const sysDatabaseUser = "";
+    const sysDatabaseUser = "mustermann";
     
     /**
      * Database password
      */
-    const sysDatabasePwd = "";
+    const sysDatabasePwd = "start123";
     
     /**
      * Define Field 'ModifiedDateTime' stores to every modification the DateTime -<br>
