@@ -60,6 +60,11 @@ abstract class Database extends Base
      * Creates a new Database if not exists
      */
     private function creteDbIfNotExist() {
+        if(!SysConstants::sysDatabaseHost || !SysConstants::sysDatabaseName || !SysConstants::sysDatabasePwd || !SysConstants::sysDatabaseUser)
+        {
+            throw new Exception("Datenbankparameter fehlen!");
+        }
+        
         $mysqli = new mysqli(SysConstants::sysDatabaseHost, SysConstants::sysDatabaseUser, SysConstants::sysDatabasePwd);
         $query = "CREATE DATABASE IF NOT EXISTS ".SysConstants::sysDatabaseName;
         if ($mysqli->query($query) === FALSE){
