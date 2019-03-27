@@ -37,8 +37,8 @@ class FormRun
         
         if($isOnline)
         {
-            $header .= "\r\n   <script src=\"http://code.jquery.com/jquery-latest.js\"></script>";
-            $header .= "\r\n   <script src=\"http://code.jquery.com/ui/1.11.4/jquery-ui.js\"></script>"; 
+            $header .= "\r\n   <script src=\"https://code.jquery.com/jquery-latest.js\"></script>";
+            $header .= "\r\n   <script src=\"https://code.jquery.com/ui/1.11.4/jquery-ui.js\"></script>"; 
         }
         else
         {
