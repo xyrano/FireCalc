@@ -11,7 +11,7 @@ require_once("../Functions.php");
     if($isOnline)
     {
         ?>
-        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <?php
     }
