@@ -2,6 +2,7 @@
 require_once("../../Functions.php");
 require_once(sysGetBaseDir()."/Factory.php");
 
+$ret = null;
 $T = new FireDeptTable();
 $T->getRecords();
 while($T->next()) {
